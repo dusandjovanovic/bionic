@@ -9,7 +9,7 @@ Primer tabele sa podacima koji oslikavaju vremenske uslove. Tabela sadrži pet p
 
 ![alt text][window]
 
-[window]: images/window.png
+[window]: images/window.PNG
 
 
 ## Način rešavanja
