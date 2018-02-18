@@ -1,0 +1,10 @@
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.Form1.resources
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.Properties.Resources.resources
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.csproj.GenerateResource.Cache
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.csproj.CoreCompileInputs.cache
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\bin\Debug\ANNetwork.exe.config
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\bin\Debug\ANNetwork.exe
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\bin\Debug\ANNetwork.pdb
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.exe
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.pdb
+C:\Users\dusan\source\repos\ANNetwork\ANNetwork\obj\Debug\ANNetwork.csprojResolveAssemblyReference.cache
