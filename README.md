@@ -12,16 +12,16 @@ Primer tabele sa podacima koji oslikavaju vremenske uslove. Tabela sadrži pet p
 
 ### Izbor podataka
 Većina API-a za pribavljanje podataka o vremenskim prilikama imaju za parametre:
-• Temperaturu (°C)
-• Vlažnost vazduha (%)
-• Pritisak (mbar)
-• Padavine i slično..
+* Temperaturu (°C)
+* Vlažnost vazduha (%)
+* Pritisak (mbar)
+* Padavine i slično..
 
 ### Izbor ulaznih i izlaznih promenljivih
 Prvi korak u struktuiranju neuronske mreže svodi se na izbor podataka koji će se dostavljati, pritom uzevši u obzir model predstavljanja podataka. Neuronske mreže rade poput nelinearnih blokova sa predefinisanim ulazima i izlazima, prema tome neophodno je izabrati koju će ulogu imati svaka vremenska promenljiva u jednoj ovakvoj mreži. Drugim rečima, treba odrediti koje će promenljive neuronska mreža da predviđa i korišćenjem kojih ulaznih promenljivih. Za demonstraciju mogućnosti neuronskih mreža u predviđanju vremenskih prilika, za predviđanje (izlaz) je izabrana **prosečna temperatura** u jednom danu, predviđena na osnovu ostalih vremenskih promenljivih (ulazi). *Dakle, ulazne promenljive će biti: padavine, izlaganje suncu, vlažnost vazduha i brzina vetra. Dok je izlazna vrednost koja se predviđa srednja dnevna temperatura, na osnovu ulaznih promenljivih.*
 
 ### Filtriranje podataka
-Veoma često se dešava da podaci predati neuronskoj mreži imaju manjkavosti u vidu nepotpunih podataka i nepostojanja vrednosti za neke promenljive, grešaka u merenjima, retkih velikih odstupanja od srednje vrednosti i slično. Obzirom da neuronska mreža reprodukuje podatke po dinamici koja oslikava ulazne vrednosti, veoma je bitno izbegavati loše podatke za učenje. Svi ulazni podaci posmatraju se kao matrica A[n][m] gde je n broj meranja, a m broj promenljivih koje opisuju svako stanje. Filtriranje se svodi na nalaženje loših zapisa i njihovo uklanjanje.
+Veoma često se dešava da podaci predati neuronskoj mreži imaju manjkavosti u vidu nepotpunih podataka i nepostojanja vrednosti za neke promenljive, grešaka u merenjima, retkih velikih odstupanja od srednje vrednosti i slično. Obzirom da neuronska mreža reprodukuje podatke po dinamici koja oslikava ulazne vrednosti, veoma je bitno izbegavati loše podatke za učenje. Svi ulazni podaci posmatraju se kao **matrica A[n][m]** gde je n broj merenja, a m broj promenljivih koje opisuju svako stanje. Filtriranje se svodi na nalaženje loših zapisa i njihovo uklanjanje.
  
 Jedan od načina nalaženja loših zapisa se svodi na poređenje svakog merenja Xi sa srednjom vrednošću E, uz razmatranje srednjeg odstupanja. di predstavlja težinu odstupanja merenja od srednje vrednosti, ako je ovo odstupanje veće od tri celokupan zapis iz koga je razmatrana vrednost se odbacuje (ceo red matrice).
 
