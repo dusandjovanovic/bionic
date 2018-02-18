@@ -7,6 +7,10 @@ Primena neuronske mreže za **predviđanje vremenske prognoze**. Korisnost neuro
  
 Primer tabele sa podacima koji oslikavaju vremenske uslove. Tabela sadrži pet promenljivih koje opisuju hipotetičke vremenske uslove. Uz pretpostavku da se za svaku promenljivu takođe vezuje lista podataka koja pokriva određeni vremenski period (vremenske serije). Upravo odnos između takvih vremenskih serija predstavlja dinamičku reprezentaciju vremenskih prilika u nekom mestu. Od neuronske mreže se očekuje da **nauči ovu dinamiku**.
 
+![alt text][window]
+
+[window]: images/window.png
+
 
 ## Način rešavanja
 
