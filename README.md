@@ -1,5 +1,5 @@
 # bionic
-Artifficial neural networks implementation. Weather prediction.
+Artificial neural network implementation. Weather prediction.
 
 ## Opis problema
 
